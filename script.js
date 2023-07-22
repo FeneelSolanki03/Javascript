@@ -16,4 +16,19 @@ function findMax(numbers) {
   const numbers = [3, 7, 11, 9, 2, 6];
   const maxNumber = findMax(numbers);
   console.log(maxNumber); 
+
+//   assignment 2
+function calculateArea(length, width) {
+    if (typeof length !== 'number' || typeof width !== 'number' || length <= 0 || width <= 0) {
+      throw new Error('Length and width must be positive numbers.');
+    }
+  
+    const area = length * width;
+    return area;
+  }
+  const length = 10;
+const width = 5;
+const area = calculateArea(length, width);
+console.log(area);
+
     
